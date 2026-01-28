@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dr. Manoj K. Singh | Rajkiya Engineering College Banda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+:root{
+    --black:#0B0F19;
+    --blue:#8AA2FF;
+    --light:#F9FAFB;
+    --gray:#6B7280;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--light);
+    color:#111827;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+.navbar{background:var(--black);}
+.navbar-brand{color:var(--blue)!important;font-weight:700;}
+.nav-link{color:#E5E7EB!important;}
+.nav-link:hover{color:var(--blue)!important;}
+
+/* HERO */
+.hero{
+    background:url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b") center/cover no-repeat;
+    padding:170px 20px;
+    text-align:center;
+}
+.hero h1{
+    font-size:3.4rem;
+    font-weight:800;
+    color:white;
+    text-shadow:0 6px 18px rgba(0,0,0,.8);
+}
+.hero p{
+    font-size:1.25rem;
+    color:#F3F4F6;
+    text-shadow:0 4px 14px rgba(0,0,0,.7);
+}
+
+section{padding:80px 0;}
+.section-title{
+    font-size:2.2rem;
+    font-weight:700;
+    border-left:6px solid var(--blue);
+    padding-left:14px;
+    margin-bottom:40px;
+}
+
+/* ABOUT CARD */
+.about-card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+    padding:30px;
+}
+.about-img img{
+    width:100%;
+    border-radius:16px;
+    object-fit:cover;
+}
+
+/* GENERAL CARD */
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 15px 30px rgba(0,0,0,.1);
+}
+
+/* STUDENT CARDS */
+.student-card{
+    border-radius:20px;
+    overflow:hidden;
+    background:white;
+    transition:all .4s ease;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+.student-card:hover{
+    transform:translateY(-12px) scale(1.02);
+    box-shadow:0 25px 45px rgba(138,162,255,.4);
+}
+.student-img img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+.student-card:hover img{transform:scale(1.12);}
+.student-body{
+    padding:20px;
+    text-align:center;
+}
+.student-body h5{font-weight:600;}
+.student-body p{font-size:.95rem;color:var(--gray);}
+
+/* LIST */
+.list-group-item{
+    border:none;
+    border-left:4px solid var(--blue);
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    background:var(--black);
+    color:#E5E7EB;
+    padding:25px 0;
+    font-size:.85rem;
+}
+
+@media(max-width:768px){
+    .hero h1{font-size:2.4rem;}
+    .section-title{font-size:1.8rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">Dr. Manoj K. Singh </a>
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+<li class="nav-item"><a class="nav-link" href="#students">Students</a></li>
+<li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Dr. Manoj K. Singh </h1>
+<p>Assistant Professor | Rajkiya Engineering College Banda</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
+<div class="row align-items-center g-4">
+<div class="col-md-4 about-img text-center">
+<img src="Sir.png" alt="Faculty Photo">
+</div>
+<div class="col-md-8">
+<p>
+I am a faculty member at Rajkiya Engineering College Banda with extensive experience in
+teaching, research, and student mentoring. My teaching philosophy focuses on conceptual
+clarity, hands-on learning, and industry relevance.
+</p>
+<ul>
+<li><strong>Qualification:</strong> Ph.D / M.Sc. / B.Sc.</li>
+<li><strong>Experience:</strong> 10+ Years</li>
+<li><strong>Specialization:</strong> Electronics ( 3rd Position in University Merit List )</li>
+<li><strong>Research Interests:</strong> Energy Conservation & Storage Lab</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="bg-white">
+<div class="container">
+<h2 class="section-title">Publications</h2>
+<input type="text" id="searchinput" class="form-control mb-3" placeholder="Search publications...">
+<ul class="list-group" id="publication-list">
+
+    <li class="list-group-item active" aria-current="true"><strong>Patents & Designs</strong></li>
+
+    <li class="list-group-item">
+        <strong>Garbage Truck with Inbuilt Excavator</strong> (Indian Design Patent)<br>
+        <small class="text-muted">Design No: 398331-001 | Date: 25/10/2023</small><br>
+        <small class="text-muted">Inventors: Deep Singh Thakur, Ankush Kumar Rajput, Abhijeet Singh, Sheo Prasad Shukla, <strong>Manoj K. Singh</strong>, Pushpendra Singh.</small>
+    </li>
+
+    <li class="list-group-item">
+        <strong>System and Method for Secured Irrigation</strong> (Australian Patent)<br>
+        <small class="text-muted">Patent No: 2021106933 | Granted: 08/12/2021</small><br>
+        <small class="text-muted">Inventors: Abhijeet Singh, Pushpendra Singh, <strong>Manoj K. Singh</strong>, Ankush Rajput, Rajesh Arya, Deep Thakur, Pankaj Shrivastava, Shishir Dixit.</small>
+    </li>
+
+    <li class="list-group-item">
+        <strong>System and Method for Smart Integrated Traffic Control</strong> (Australian Patent)<br>
+        <small class="text-muted">Patent No: 2021106599 | Granted: 17/11/2021</small><br>
+        <small class="text-muted">Inventors: Abhijeet Singh, Pushpendra Singh, <strong>Manoj K. Singh</strong>, Ankush Rajput, Pankaj Shrivastava, Deep Thakur.</small>
+    </li>
+
+    <li class="list-group-item active" aria-current="true"><strong>Conference Presentations & Papers</strong></li>
+
+    <li class="list-group-item">
+        <strong>Hybrid Supercapacitor for Advanced Energy Storage</strong> (Invited Speaker)<br>
+        <small class="text-muted">3rd International Conference on Energy & Environmental Materials (INCEEM-2025)</small><br>
+        <small class="text-muted">Sharda University, U.P. | Oct 06-09, 2025</small>
+    </li>
+
+    <li class="list-group-item">
+        <strong>Improving Energy Density of Quasi-Solid-State Supercapacitor using Redox Additive</strong> (Invited Speaker)<br>
+        <small class="text-muted">National Workshop cum Conference on Structural and Functional Analysis of Energy Storage Materials (NWCSFAESM-2025)</small><br>
+        <small class="text-muted">April 24-25, 2025</small>
+    </li>
+
+    <li class="list-group-item active" aria-current="true"><strong>Book Chapters</strong></li>
+
+    <li class="list-group-item">
+        <strong>Bio-based Nanocomposites for imaging, Tissue repairing, and drug delivery applications</strong><br>
+        <small class="text-muted">Source: Taylor & Francis (2024)</small>
+    </li>
+    
+    <li class="list-group-item">
+        <strong>Quasi-Solid-State Supercapacitor Performance Based on Redox Additive Modified Graphene Electrode</strong><br>
+        <small class="text-muted">Book: Advancement in Functional Materials (2024)</small>
+    </li>
+
+    <li class="list-group-item">
+        <strong>Recent progress on materials, architecture, and performances on hybrid battery-supercapacitors</strong><br>
+        <small class="text-muted">Book: Smart Supercapacitors (Elsevier, 2023)</small>
+    </li>
+    
+    <li class="list-group-item active" aria-current="true"><strong>Selected Journal Papers</strong></li>
+
+    <li class="list-group-item">
+        <strong>A new configuration of quasi-solid-state hybrid battery-supercapacitor with LiFePO4@MWCNTs</strong><br>
+        <small class="text-muted">Bulletin of Materials Science (2018)</small>
+    </li>
+    
+    <li class="list-group-item">
+        <strong>Solid-State Hybrid Supercapacitor of PEDOT: PSS//LiFePO4 Configuration</strong><br>
+        <small class="text-muted">Int. J. Electroactive Mater. (2017)</small>
+    </li>
+</ul>
+</div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+<div class="container">
+<h2 class="section-title">Research Projects</h2>
+<div class="row">
+<div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-primary">Ongoing</span>
+                            <small class="text-muted">Aug 2024 - Aug 2027</small>
+                        </div>
+                        <h5 class="card-title">Real time cyberbullying detection for Koo and Twitter</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">CSTUP Sponsored Start-up Research Grant</h6>
+                        <p class="card-text small text-muted">
+                            Using Machine Learning and Deep Learning methods to detect cyberbullying in real-time.
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Role:</strong> Co-Principal Investigator</li>
+                            <li><strong>Grant Amount:</strong> &#8377; 13.08 Lac</li>
+                            <li><strong>Ref No:</strong> CST/D-712</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-primary">Ongoing</span>
+                            <small class="text-muted">Aug 2024 - Aug 2027</small>
+                        </div>
+                        <h5 class="card-title">Studies on Flexible, Quasi-Solid-State Hybrid Supercapacitor</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">CSTUP Sponsored Start-up Research Grant</h6>
+                        <p class="card-text small text-muted">
+                            Research on Redox Additive Gel Polymer Electrolytes for energy storage.
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Role:</strong> Principal Investigator</li>
+                            <li><strong>Grant Amount:</strong> &#8377; 15.58 Lac</li>
+                            <li><strong>Ref No:</strong> CST/E&T/D/801</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-success">Ongoing</span>
+                            <small class="text-muted">Aug 2021 - Present</small>
+                        </div>
+                        <h5 class="card-title">Quasi-Solid-State Sodium ion Rechargeable Batteries</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">DDUQIP (Phase-1) Scheme, AKTU Lucknow</h6>
+                        <p class="card-text small text-muted">
+                            Development of rechargeable batteries using Gel Polymer Electrolyte (Seed Grant).
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Role:</strong> Principal Investigator</li>
+                            <li><strong>Grant Amount:</strong> &#8377; 20.00 Lac</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+<div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="badge bg-secondary">Completed</span>
+                            <small class="text-muted">Aug 2020 - Aug 2022</small>
+                        </div>
+                        <h5 class="card-title">Hybrid Supercapacitor with Redox Additive</h5>
+                        <h6 class="card-subtitle mb-2 text-primary">DST-SERB Sponsored Start-up Research Grant</h6>
+                        <p class="card-text small text-muted">
+                            Project utilizing Catholyte and Anolyte Redox Additive in Polymeric Electrolytes.
+                        </p>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Role:</strong> Principal Investigator</li>
+                            <li><strong>Grant Amount:</strong> &#8377; 18.31 Lac</li>
+                            <li><strong>Ref No:</strong> SRG/2019/001134</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+</section>
+
+<!-- STUDENTS -->
+<section id="students" class="bg-white">
+<div class="container">
+<h2 class="section-title">Students</h2>
+<div class="row g-4">
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="student-card">
+<div class="student-img"><img src="https://via.placeholder.com/400"></div>
+<div class="student-body">
+<h5>Rahul Verma</h5>
+<p>Software Engineer<br>Infosys</p>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="student-card">
+<div class="student-img"><img src="https://via.placeholder.com/400"></div>
+<div class="student-body">
+<h5>Anjali Singh</h5>
+<p>Design Engineer<br>L&T</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+<div class="container">
+<h2 class="section-title">Latest News</h2>
+<ul class="list-group">
+<li class="list-group-item">Presented paper at International Conference</li>
+<li class="list-group-item">Conducted FDP on Emerging Technologies</li>
+</ul>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-white py-5">
+    <div class="container">
+        
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold text-primary">Get in Touch</h2>
+            <p class="text-muted">Feel free to reach out for research collaborations or student inquiries.</p>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-lg-5">
+                
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center p-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                            <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="mb-0 text-muted small">mksingh@recbanda.ac.in</p>
+                            <p class="mb-0 text-muted small">mmanoj.ssi@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body d-flex align-items-center p-4">
+                        <div class="bg-success bg-opacity-10 p-3 rounded-circle me-3">
+                            <i class="bi bi-telephone-fill text-success fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Phone</h6>
+                            <p class="mb-0 text-muted">+91-9990808955</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">
+                            <i class="bi bi-geo-alt-fill text-danger me-2"></i>Location
+                        </h6>
+                        <p class="text-muted small mb-0">
+                            Rajkiya Engineering College Banda,<br>
+                            Atarra, Banda-210201,<br>
+                            Uttar Pradesh, India.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4 p-md-5">
+                        <h4 class="card-title fw-bold mb-4">Send a Message</h4>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+<div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0" placeholder="Message" id="message" style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3 fw-bold" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="text-center">
+© 2026 Faculty Name | Rajkiya Engineering College Banda
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // 1. Find the search box
+    document.getElementById('searchinput').addEventListener('keyup', function() {
+        
+        // 2. Get the current text typed in (lowercase for easy matching)
+        var filter = this.value.toLowerCase();
+        
+        // 3. Get all the list items (both headers and actual papers)
+        var listItems = document.querySelectorAll('#publication-list li');
+
+        // 4. Loop through each item
+        listItems.forEach(function(item) {
+            
+            // If it's a blue header (class="active"), always keep it visible
+            if (item.classList.contains('active')) {
+                return; 
+            }
+
+            // For regular items, check if the text matches
+            var text = item.textContent || item.innerText;
+            if (text.toLowerCase().indexOf(filter) > -1) {
+                item.style.display = ""; // Show it
+            } else {
+                item.style.display = "none"; // Hide it
+            }
+        });
+    });
+</script>
+</body>
+</html>
